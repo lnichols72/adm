@@ -1066,7 +1066,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     font-weight: bold;
     font-style: normal;
 }
-#dd-micro { clear:both; }
+#dd-micro { clear:both; width: 1200px; margin: 0 auto; max-width: 100%;font: 30px Roboto, arial, sans-serif; color: #333333; line-height:43px; }
 #prtcode { font-size: 9px; float: right; margin-right: 1em; margin-bottom: 1em; }
 .adc-references {width:90%; max-width:1200px; overflow:hidden; margin:0 auto; padding-bottom:1.5em; position: relative;}
 .adc-references p {font-size: .875em; line-height: 1.15em; margin:0;}
@@ -1093,138 +1093,153 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     color: white;
     background:#c31331;
     margin-bottom:0;
-    height:57px;
+    min-height:57px;
     line-height: 57px;
     margin:0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 .dd-banner-image {
     margin: 0 auto;
     width: 1200px;
     max-width: 100%;
 }
+.dd-banner-image img {width:100%;}
+
+.dd-intro {padding-bottom:45px;}
 .sub-banner {
     overflow: hidden;
+    padding-top:20px;
 }
-.dd-1 { background:#c31331; }
-.dd-2 { background:#ad172b; margin-top: 4em;}
-.dd-banner h4 { text-align: center; width:100%; max-width: 970px; text-transform: uppercase; margin:0 auto; }
-.dd-2 .banner-inner { max-width: 1200px; width:90%; margin:0 auto; position: relative;}
-.dd-2 p { padding-left:33%; }
-.dd-banner .byline { text-transform: uppercase; font-weight: bold; }
-#mcgraw {
-    border-radius: 50%;
-    border: 15px solid white;
+
+.intro-text {
+    width: 40%;
     float: left;
-    position: absolute;
-    top: -50%;
-    width: 25%;
-    background: #fff;
+    padding-left:12%;
 }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .dd-content { width:90%; max-width:1200px; overflow:hidden; margin:0 auto; position: relative;}
+p.link a {color: #c31331; text-decoration:none;}
+
+p.link {text-transform:uppercase;font-weight:bold;font-size:33px; background:url(red-underline.gif) no-repeat left bottom; padding-bottom:30px }
+
+.dd-content {width:40%; float:right;}
 .dd-content p, .dd-banner p { font-size:1.3em; line-height: 1.5em; }
 .dd-content a {color:#ad172b; text-decoration: none;}
 .dd-content a:hover {text-decoration: underline;}
 .dd-content h6 { font-size: 1.4em; line-height: 1.5em; color:#ad172b; margin-top: 1.25em;}
 .dd-content p, .dd-content li { color: #303e48; }
-.dd-content li {
-    font-size: 1.3em;
-    background-image: url('http://www.diabetes.org/assets/img/challenge/challenge-li-bullet.png');
-    line-height: 1.3em;
-    padding-left: 35px;
-    background-position-y: top;
-    margin-bottom: 1em;
-}
-.dd-content h1 { color: #303e48;  text-align: center; font-size: 3em; line-height: 1.2em; margin: .5em 0 .5em 0; }
-.dd-content p.first {margin-top:0;}
-.dd-logos-block { float:left; margin: 1em 2em; width: 33%;}
-#ADC-logo { width: 100%; margin-bottom: 1em; }
-#ADA-logo { float: left; }
-#Merck-logo { float:left;}
-.promo-1{ float:right; clear:left; width:42%; margin-left: 8%;}
-img.mission-1 {
-  position: absolute;
-  width: 28%;
-}
+
 .dd-content h1.first { margin: 3em 0 .5em 0; }
 .cc-2 .button {
-  margin: 0 auto 3em;
-  padding: .5em 1em;
-  font-size: 1.5em;
-  color: #fff;
-  text-transform: uppercase;
-  background: #c31331;
-  border-left: 0;
-  display: inline-block;
-  float: none;
+    /* margin: 0; */
+    padding: .25em 1em;
+    font-size: 33px;
+    line-height: 33px;
+    text-transform: uppercase;
+    background: transparent;
+    border-left: 0;
+    display: block;
+    float: left;
+    height: 125px;
+    width: 355px;
+    max-width:100%;
 }
-/* sharethis */
-.st_facebook_large, .st_twitter_large, .st_pinterest_large, .st_sharethis_large { float: left; }
-#share-this-tools { float: right; background: transparent; border: none; }
-@media screen and (max-width:1200px){
-    #mcgraw { position: static; }
-    #share-this-tools { position: static; right: 0; float: right; margin: 0 0 1em 1em; }
-}
-@media screen and (max-width:900px){
-    .dd-banner h4 { font-size: 1.6em; }
-    #share-this-tools { position: absolute;  top: 0; }
-    .dd-logos-block {  }
-    .dd-content p.first { margin-top: 1em; }
-    .dd-content h1 { font-size: 2em;}
-    .cc-2 .button {font-size: 1em;}
-    .promo-1 { width: 33%; margin-left: 5%; }
-    .fb-link { clear: left; margin-left: 2em; }
-}
-@media screen and (max-width:660px){
-    .dd-logos-block { width: 75%; }
-    .promo-1 { width: 50%; margin-left: 2%; }
-    #mcgraw {
-        position: static;
-        float: none;
-        width: 50%;
-        margin: 0 auto;
-        display: block;
-    }
-    .dd-2 p { padding-left: 0; }
-    #ADA-logo { padding-left: 0%; }
-    #share-this-tools {
-        border-left: 1px solid #ddd;
-    }
-    .st_facebook_large, .st_twitter_large, .st_pinterest_large, .st_sharethis_large { float: none;}
-    a.fb-link { margin-bottom: 1em; }
-}
-@media screen and (max-width:525px){
-    .promo-1 { width: 80%; margin: 0 auto; float: none; display: block; }
-    .dd-logos-block {
-        width: 100%;
-        margin: 0;
-        text-align: center;
-        border-bottom: 1px solid #ddd;
-    }
-    .dd-content h1.first { margin: .5em 0 .5em 0; }
-    img.mission-1 { position: static;  width: 55%; margin: 0 auto; display: block; }
-    #share-this-tools {
-        border-left: none;
-        position: static;
-        clear: both;
-        float: none;
-        border-top: 1px solid #ddd;
-        width: 100%;
-        margin: 0;
-        text-align: center;
-        border-bottom: 1px solid #ddd;
-    }
-    #Merck-logo {
-        float: none;
-        display: inline-block;
-        vertical-align: top;
-    }
-    #ADA-logo {
-        float: none;
-    }
+.button a{display:block; font-weight:bold;  padding-left:150px; padding-top:20px;height:125px}
+a#advocate {background:url(icon-learn.gif) no-repeat;}
+a#write {background:url(icon-write.gif) no-repeat; padding-top:15px}
+a#donate {background:url(icon-donate.gif) no-repeat;padding-top:30px}
+
+div#dd-cta {
+    -webkit-box-shadow: 0 0 25px 5px rgba(1,1,1,.3);
+    box-shadow: 0 0 25px 5px rgba(1,1,1,.3);
+    clear: both;
+    width: 1080px;
+    margin: 0 auto;
+    max-width: 90%;
+    padding:40px;
+    padding-right:0px;
+    background-color:#ffffff;
 }
 
-.cc-2 .sub-banner {display:flex; justify-content:space-evenly;}
-.cc-2 .button {width: 20%; margin: auto; text-align: center;}
+div#dd-cta h2{font-size:48px; color:#cc0033; display:inline-block;}
+
+div#dd-cta .left {float:left; width:635px; max-width:100%;}
+
+div#dd-cta p {font-size:24px; line-height:33px; padding-left:95px; padding-top:5px; clear:both; position:relative;}
+#dd-cta p.one {background:url(cta-1.gif) no-repeat}
+#dd-cta p.two {background:url(cta-2.gif) no-repeat}
+#dd-cta p.three {background:url(cta-3.gif) no-repeat}
+#dd-cta p strong {font-size:30px}
+#dd-cta p span {color:#cc0033; font-weight:bold}
+#dd-cta img {float:right}
+#dd-cta p.one img {
+    position: absolute;
+    right: 0;
+}
+#dd-cta div.social-media {float:right; background:url(social-underline.gif) no-repeat bottom;padding-bottom:15px; margin-right:50px}
+#dd-cta div.social-media img {float:left; display:inline-block;padding:10px}
+div#videos {margin-top:20px; padding:40px; background-color:#f5f5f5;padding-left:11%; padding-right:11%;}
+#videos h2 {font-size:28px; color:#333333}
+#videos h2 span {color:#c31331}
+
+div#dd-cta {
+    -moz-transform: rotate(-4deg);
+-webkit-transform: rotate(-4deg);
+-o-transform: rotate(-4deg);
+-ms-transform: rotate(-4deg);
+transform: rotate(-4deg);
+}
+
+div#video-bar {display:flex;justify-content:space-between; line-height:normal;}
+div#video-bar .video-container{width:281px;background-color:#c31331; color:#fff;font-size:18px;text-align:center;-webkit-border-radius: 0 0 10px 10px;border-radius: 0 0 10px 10px;}
+div#video-bar .caption {}
+div#video-bar .caption p {margin:0;padding:0;line-height:normal;padding-bottom:15px;}
+div#video-bar .caption p.title{font-weight:bold;font-size:21px;padding-bottom:0; padding-top:10px;}
+#bottom a {display:inline-block; color:#c31331; font-weight:bold;font-size:24px;text-decoration:none;background:url(symptom-underline.gif) no-repeat bottom;height:60px}
+div#sponsor {text-align:center;font-size:15px;padding-bottom:50px;line-height:normal;}
+div#sponsor p {margin-bottom:10px}
+
+#dd-micro h4 {
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width:768px) {
+    div#dd-cta {padding:20px;width:90%;margin-left:40px}
+    .intro-text {padding-left:20px;width:45%}
+    .dd-content{float:left; width:50%; }
+    #dd-cta img{float:none; }
+    div#videos {padding:20px;}
+    div#video-bar {flex-flow: row wrap;justify-content:flex-start}
+    div#video-bar div.video-container {margin:auto;margin-bottom:20px}
+    div#bottom{padding-left:20px}
+
+}
+
+@media screen and (max-width:425px) {
+    .intro-text{width:90%;}
+    .dd-content{width:100%;}
+    p.link {background-size:contain;}
+    .left img {max-width:100%}
+    div#dd-cta {
+    -moz-transform: rotate(-2deg);
+-webkit-transform: rotate(-2deg);
+-o-transform: rotate(-2deg);
+-ms-transform: rotate(-2deg);
+transform: rotate(-2deg);
+}
+}
+
+
+
 </style>
 <div id="dd-micro">
     <div class="dd-banner dd-1">
@@ -1233,42 +1248,89 @@ img.mission-1 {
     <div class="dd-banner-image">
         <img src="diabetes-month-banner.gif" alt="You can't ignore Diabetes, but you can do something about it">
     </div>
-    <div class="dd-content cc-2">
-        <div class="sub-banner">
-            <div class="button">
-                Learn your risk
-            </div>
-            <div class="button">
-                Donate
-            </div>
-            <div class="button">
-                Write to diabetes
-            </div>
+    <div class="dd-intro clearfix">
+
+        <div class="intro-text">
+            <p>Whether you’re living with diabetes, caring for someone who is, or you’re fighting to stop it, <strong>there's a <span style="color:#c31331;">hero</span> in you</strong>. One in 11 Americans has diabetes. So <strong>put on your cape</strong> and take a stand.</p>
+            <p class="link"><a href="#">Help Spread the Word &raquo;</a></p>
+
+
         </div>
-        <p class="first">America's Diabetes Challenge is a program from Merck and the American Diabetes Association that encourages people with type 2 diabetes to work with their doctor to set and reach their A1C goal (A1C is the average blood glucose level over the past 2 to 3 months). As part of the program, people can also learn if they're at risk of low blood glucose, known as hypoglycemia, and how to help reduce that risk.</p>
-        <p>Your voice matters to us, so last year, America's Diabetes Challenge asked people to share their experiences living with type 2 diabetes or supporting someone who has it. After hearing from people from across the country, it was clear that diabetes management isn't always easy. Setting an A1C goal was challenging for some people, while for others, changing eating habits and remembering to take their medicine were the most difficult aspects.</p>
-        <a href="http://www.americasdiabeteschallenge.com/"><img class="promo-1" src="http://main.diabetes.org/dorg/collabs/adc/adc-take-the-next-step-arrow.gif" alt="Take the Next Step"></a>
-        <p>After listening to your stories, we identified common challenges of type 2 diabetes management like eating healthy, exercising, sticking to a treatment plan and coping with the disease. Now, America's Diabetes Challenge is offering tips to help people with the disease and their loved ones tackle these challenges head on.</p>
-        <p>Are you ready to take the next step? Visit <a href="http://www.americasdiabeteschallenge.com/">AmericasDiabetesChallenge.com</a> to access our tips and start putting them into action! Whether you decide to cook a new healthy recipe or try out an exercise class with a friend, make sure to share a picture, story or video so we can see your progress. Remember to always work with your doctor before making changes to your individualized diabetes management plan.</p>
-    </div>
-    <div class="dd-banner dd-2">
-        <div class="banner-inner">
-            <img id="mcgraw" src="http://www.diabetes.org/assets/img/challenge/tim-circle-profile-leaning.png" alt="Tim McGraw"/>
-            <p>"I've seen how type 2 diabetes affects people from all walks of life and have listened as people shared their challenges with managing it. Now, it's our turn to help support you &ndash; we're offering tips to help you tackle these challenges head on. <strong>So, are you ready to take the next step?</strong> Show us how you're putting our tips into action so we can see your progress."</p>
-            <p class="byline">- Tim McGraw</p>
+        <div class="dd-content cc-2">
+            <div class="sub-banner">
+                <div class="button">
+                <a id="advocate" href="#">become an advocate &raquo;</a>
+                </div>
+                <div class="button">
+                <a id="write" href="#">Write to diabetes &raquo;</a>
+                </div>
+                <div class="button">
+                <a id="donate" href="#">Give back &raquo;</a>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="dd-content cc-2">
-        <h1>Join America's Diabetes Challenge</h1>
-        <p style="text-align:center">
-            <a href="http://www.americasdiabeteschallenge.com/" class="button">Click Here to Take the Next Step</a>
-        </p>
+    <div id="dd-cta" class="clearfix">
+        <h2>How to write a letter to Diabetes</h2>
+        <img src="facebook-post.gif" alt="Sample facebook post">
+
+        <div class="left">
+                    <img src="pencil.gif" alt="pencil">
+        <p class="one">Consider what you would say to Diabetes.<br>
+            <strong>How does it make you <span>feel?</span></strong><img src="feelings.gif"></p>
+        <p class="two">Write a letter to Diabetes expressing your feelings.<br><strong>Not a writer?</strong> Record a video or audio message.</p>
+        <p class="three">Share your letter to Diabetes on<br>
+            social media using <span>#DearDiabetes</span>.</p>
+        </div>
+<!--         <div class="right">
+
+        </div> -->
+        <div class="social-media">
+            <a href="#"><img src="icon-facebook.gif" alt="Facebook"></a>
+            <a href="#"><img src="icon-twitter.gif" alt="Twitter"></a>
+            <a href="#"><img src="icon-instagram.gif" alt="Instagram"></a>
+        </div>
     </div>
+
+    <div id="videos">
+        <h2>Hear letters to Diabetes from our <span>heroes</span></h2>
+        <div id="video-bar">
+            <div class="video-container">
+                <iframe width="281" height="163" src="https://www.youtube.com/embed/w6DW4i-mfbA" frameborder="0" allowfullscreen></iframe>
+                <div class="caption">
+                    <p class="title">Video Title 1 Here</p>
+                    <p>A Short Description Here</p>
+                </div>
+            </div>
+            <div class="video-container">
+                <iframe width="281" height="163" src="https://www.youtube.com/embed/w6DW4i-mfbA" frameborder="0" allowfullscreen></iframe>
+                <div class="caption">
+                    <p class="title">Video Title 2 Here</p>
+                    <p>A Short Description Here</p>
+                </div>
+            </div>
+            <div class="video-container">
+                <iframe width="281" height="163" src="https://www.youtube.com/embed/w6DW4i-mfbA" frameborder="0" allowfullscreen></iframe>
+                <div class="caption">
+                    <p class="title">Video Title 3 Here</p>
+                    <p>A Short Description Here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="bottom">
+    <p><a href="#">Learn the symptoms of diabetes &raquo;</a></p>
+</div>
+<div id="sponsor">
+    <p>American Diabetes Month 2017 is sponsored by</p>
+    <img src="colgate-logo.gif" alt="Colgate">
+</div>
+
 </div>
 
 
-<div id="prtcode">DIAB-1207426-0000 04/17</div>
+
 
 
 
